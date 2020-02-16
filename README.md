@@ -11,4 +11,7 @@ __Assumption__:
 __Model__: 
 * A SEIR model for COVID-19 transmission
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
 $$\frac{dS}{dt}=-\beta(t)\frac{S(t)I(t)}{N(t)}$$
+</script>
+

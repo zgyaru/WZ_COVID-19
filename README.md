@@ -10,4 +10,5 @@ __Assumption__:
 
 __Model__: 
 * A SEIR model for COVID-19 transmission
+
 $$\frac{dS}{dt}=-\beta(t)\frac{S(t)I(t)}{N(t)}$$

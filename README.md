@@ -2,6 +2,11 @@
 
 In late December 2019, Chinese authorities reported a cluster of pneumonia cases of unknown aetiology in Wuhan, China 1. A novel strain of coronavirus named Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) was isolated and identified on 2 January 2020 2. Human-to-human transmission have been confirmed by a study of a family cluster and have occurred in health-care workers 3,4. Until 10 February 2020, 42638 cases of 2019 novel coronavirus disease (COVID-19) have been confirmed in China, of which 31728 came from Hubei Province (Figure). Wenzhou, as a southeast coastal city with the most cases (434) outside Hubei Province, its epidemiologic characteristics, policy control and epidemic projections have certain references for national and worldwide epidemic prevention and control. In this study, we described the epidemiologic characteristics of COVID-19 in Wenzhou and made a transmission model to predict the expected number of cases in the coming days.
 
+In this study, we customised four SEIR model across Wenzhou, Shenzhen, Zhengzhou and Harbin. We first gathered information on the dates of illness onset, hospitalization, and clinical status. This Epidemiologic were collected from the the National Health Commission of the People’s Republic of China and the Health Commission of different country by February 10, 2020. 
+
+We estimate SEIR parameters through the cumulative number of infected patients using non-linear least squares method. Initial number of exposed, infected, confirmed and recovered cases were estimated by obtained data. Resident population of countries were obtained from public data. 
+
+
 __Assumption__:
 
 * Infected individuals were not infectious during the incubation period
@@ -38,14 +43,23 @@ __Parameter estimate__:
 * The number of cumulative infected cases were obtained to estimating unknown parameters by using nonlinear least squares method. 
 Di and Dc were obey Weibull distribution in which parameters of distribution were fitted by the subset of cases with detailed information available. 
 
-![weibull](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/weibull.png)
+* Initial number of cases:
+
+|  |  <strong>N</strong> | <strong>E</strong> | <strong>I</strong> | <strong>C</strong> | <strong>R</strong> |
+| :-----:| :----: | :----: | :----: | :----: | :----: |
+| Wenzhou | 9,600,000 | 2 | 1 | 0 | 0 |
+| Zhengzhou1 | 10，140，000 | 2 | 1 | 0 | 0 |
+| Zhengzhou2 |  10，140，000 | 20 | 15 | 38 | 0 |
+| Shenzhen |  13,026,600 | 8 | 9 | 0 | 0 |
+| Harbin | 9,550,000 | 10 | 0 | 0 | 0 |
+
 
 __Simulation__:
 * We use Di and Dc as prior distribution for Markov chain Monte Carlo (MCMC) simulations. The mean time for incubation time is chosen as 5 days. The algorithm was ran for 5,000 iterations with a burn-in of 3000 iterations.
 
 __Results__:
 
-* parameters of model:
+* estimated parameters of model:
 
 |  |  <strong>Di</strong> | <strong>Dc</strong> | <strong>R0</strong> |
 | :-----:| :----: | :----: | :----: |

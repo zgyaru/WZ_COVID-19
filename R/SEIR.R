@@ -1,3 +1,22 @@
+#### SEIR model
+
+### @param: N0: total number of city
+### @param: E0: initial number of Exposed cases
+### @param: I0: initial number of Infected cases
+### @param: C0: initial number of Confirmed (admission) cases
+### @param: R0: initial number of Recovered cases
+### @param: cumI: initial cumulative number of infected cases
+### @param: cumC: initial cumulative number of confirmed cases
+### @param: De:  incubation period
+### @param: Di:  initial of onset-to-admission
+### @param: Dc:  initial of admission-to-discharged
+### @param: Ae: function of daily imported exposed cases
+### @param: Ai: function of daily imported infected cases
+### @param: tao: time of policy control
+### @param: t: time sequence used for model
+
+
+
 ODEModel_estimate_Iv1 = function(N, E0, I0, C0, R0, cumI, cumC,
                                  De, Di, Dc, 
                                  Ae, Ai, 

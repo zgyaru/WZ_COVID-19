@@ -49,8 +49,8 @@ Di and Dc were obey Weibull distribution in which parameters of distribution wer
 |  |  <strong>N</strong> | <strong>E</strong> | <strong>I</strong> | <strong>C</strong> | <strong>R</strong> |
 | :-----:| :----: | :----: | :----: | :----: | :----: |
 | Wenzhou | 9,600,000 | 2 | 1 | 0 | 0 |
-| Zhengzhou1 | 10，140，000 | 2 | 1 | 0 | 0 |
-| Zhengzhou2 |  10，140，000 | 20 | 15 | 38 | 0 |
+| Zhengzhou1 | 10,140,000 | 2 | 1 | 0 | 0 |
+| Zhengzhou2 |  10,140,000 | 20 | 15 | 38 | 0 |
 | Shenzhen |  13,026,600 | 8 | 9 | 0 | 0 |
 | Harbin | 9,550,000 | 10 | 0 | 0 | 0 |
 

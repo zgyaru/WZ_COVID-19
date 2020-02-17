@@ -6,12 +6,27 @@ __Assumption__:
 
 * Infected individuals were not infectious during the incubation period
 * Virus spread without variation (incubation time is a constant)
-* 
+* Ignoring dead cases
+* onset-to-admission and admission-to-discharged obbey weibull distribution
 
 __Model__: 
 * A SEIR model for COVID-19 transmission
+ 
+![SEIR](https://github.com/ZhangBuDiu/WZ_COVID-19/images/SEIR.jpg)
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
-$$\frac{dS}{dt}=-\beta(t)\frac{S(t)I(t)}{N(t)}$$
-</script>
 
+* `S(t)` is the number of susceptible cases
+
+* `E(t)` is the number of exposed cases
+
+* `I(t)` is the number of infectious cases (individuals with illness onset)
+
+* `C(t)` is the number of confirmed cases (individuals with hospital admission)
+
+* `R(t)` is number of recovered cases
+
+* `N(t)` is the number of resident population
+
+* `cumI(t)` is cumulative number of infected cases
+
+*  Based other research, mean incubation time for COVID-19 was five days.

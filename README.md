@@ -54,7 +54,7 @@ __Results__:
 | Shenzhen | 5.66 [4.14, 7.18] | 14.37 [13.32, 15.34] | 2.53 [1.86,3.34] |
 | Harbin | 6.26 [5.71, 6.80] | 12.27 [11.42, 13.84 ] | 3.35 [3.07,3.68] |
 
-* forcasting spread of COVID-19
+* forcasting spread of COVID-19:
 
 |  |  <strong>Peak size</strong> | <strong>Peak Date (2020)</strong> |
 | :-----:| :----: | :----: |
@@ -62,3 +62,7 @@ __Results__:
 | Zhengzhou | 191.25 [190.53，192.06] | 0307-0310 |
 | Shenzhen | 438.92 [437.58, 438.92] | 0303-0306 |
 | Harbin | 191.96 [197.86, 192.15 ] | 0308-0312 |
+
+* daily infected cases (not admission):
+
+![weibull](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/countries.png)

@@ -12,7 +12,7 @@ __Assumption__:
 __Model__: 
 * A SEIR model for COVID-19 transmission
  
-![SEIR](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/SEIR.jpg)
+![SEIR](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/SEIR.png)
 
 
 * `S(t)` is the number of susceptible cases
@@ -28,7 +28,7 @@ __Model__:
 
 In addition, we assumed that transmission rate would continuously increases before policy intervention and falls after it.
 
-![beta](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/beta.jpg)
+![beta](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/beta.png)
 
 * `𝛽` is the basic person-to-person transmission rate per day in the absence of control interventions,
 * `𝜏` is the time when the policy intervention began
@@ -38,7 +38,7 @@ __Parameter estimate__:
 The number of cumulative infected cases were obtained to estimating unknown parameters by using nonlinear least squares method. 
 Di and Dc were obey Weibull distribution in which parameters of distribution were fitted by the subset of cases with detailed information available. 
 
-![weibull](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/weibull.jpg)
+![weibull](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/weibull.png)
 
 __Simulation__:
 We use Di and Dc as prior distribution for Markov chain Monte Carlo (MCMC) simulations. The mean time for incubation time is chosen as 5 days. The algorithm was ran for 5,000 iterations with a burn-in of 3000 iterations.

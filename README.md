@@ -13,6 +13,7 @@ __Model__:
 * A SEIR model for COVID-19 transmission
  
 ![SEIR](https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/SEIR.png){: width="8px" height="10px"}
+<img width="15" height="15" src="https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/SEIR.png"/>
 
 
 * `S(t)` is the number of susceptible cases

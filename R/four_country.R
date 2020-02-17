@@ -135,8 +135,8 @@ Dc_start = mean(Dc_seq)
 
 
 N = 13026600
-E0 = 8  #arive at shenzhen befor 1.10 (6) + 1.15 infections (4)
-I0 = 9   #local infections befor 1.10
+E0 = 8 
+I0 = 9  
 C0 = 0
 R0 = 0
 cumI = 0
@@ -243,8 +243,8 @@ predict_line1 = data.frame('time' = 7:21,
 
 
 ############second
-E0 = 9  #arive at shenzhen befor 1.10 (6) + 1.15 infections (4)
-I0 = 15   #local infections befor 1.10
+E0 = 9  
+I0 = 15   
 C0 = 38
 R0 = 0
 cumI = 53

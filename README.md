@@ -57,7 +57,7 @@ __Results__:
 * forcasting spread of COVID-19
 
 |  |  <strong>Peak size</strong> | <strong>Peak Date (2020)</strong> |
-| :-----:| :----: | :----: | :----: |
+| :-----:| :----: | :----: |
 | Wenzhou | 538.37 [534.91,542.75] | 0305-0309 |
 | Zhengzhou | 191.25 [190.53，192.06] | 0307-0310 |
 | Shenzhen | 438.92 [437.58, 438.92] | 0303-0306 |

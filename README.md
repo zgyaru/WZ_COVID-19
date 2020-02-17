@@ -44,6 +44,7 @@ __Simulation__:
 * We use Di and Dc as prior distribution for Markov chain Monte Carlo (MCMC) simulations. The mean time for incubation time is chosen as 5 days. The algorithm was ran for 5,000 iterations with a burn-in of 3000 iterations.
 
 __Results__:
+
 * parameters of model:
 
 |  |  <strong>Di</strong> | <strong>Dc</strong> | <strong>R0</strong> |

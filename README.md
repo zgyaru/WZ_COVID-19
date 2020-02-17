@@ -44,7 +44,7 @@ __Parameter estimate__:
 * The number of cumulative infected cases were obtained to estimating unknown parameters by using nonlinear least squares method. 
 Di and Dc were obey Weibull distribution in which parameters of distribution were fitted by the subset of cases with detailed information available. 
 
-* For Zhengzhou, two epidemiological model were calibrated on the date before and after January 29 respectially.
+* For Zhengzhou, two epidemiological model were calibrated on the time before and after January 29 respectially.
 
 * Initial number of cases:
 

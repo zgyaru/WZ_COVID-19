@@ -12,7 +12,7 @@ __Assumption__:
 __Model__: 
 * A SEIR model for COVID-19 transmission
  
- <div align=center><img width="200" height="250" src="https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/SEIR.png"/> </div>
+ <div align=center><img width="200" height="280" src="https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/SEIR.png"/> </div>
 
 
 * `S(t)` is the number of susceptible cases

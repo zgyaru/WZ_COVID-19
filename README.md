@@ -46,7 +46,7 @@ __Simulation__:
 __Results__:
 * parameters of model:
 
-|  |  Di | Dc | R0 |
+|  |  <strong>Di</strong> | <strong>Dc</strong> | <strong>R0</strong> |
 | :-----:| :----: | :----: | :----: |
 | Wenzhou | 5.96 [3.18, 6.39] | 13.02 [11.07, 13.87] | 2.91[2.35,3.57] |
 | Zhengzhou | 6.58 [5.69, 7.65] | 12.18 [11.59，12.78] | 5.95 [5.36, 6.67] |

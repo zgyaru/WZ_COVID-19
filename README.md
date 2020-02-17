@@ -71,7 +71,7 @@ __Results__:
 | Shenzhen | 5.66 [4.14, 7.18] | 14.37 [13.32, 15.34] | 2.53 [1.86,3.34] |
 | Harbin | 6.26 [5.71, 6.80] | 12.27 [11.42, 13.84 ] | 3.35 [3.07,3.68] |
 
-* forcasting spread of COVID-19:
+* forcasting spread of COVID-19 (cumulative infected cases):
 
 |  |  <strong>Peak size</strong> | <strong>Peak Date (2020)</strong> |
 | :-----:| :----: | :----: |

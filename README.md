@@ -7,7 +7,7 @@ __Assumption__:
 * Infected individuals were not infectious during the incubation period
 * Virus spread without variation (incubation time is a constant)
 * Ignoring dead cases
-* onset-to-admission and admission-to-discharged obbey weibull distribution
+* onset-to-admission and admission-to-discharged obey weibull distribution
 
 __Model__: 
 * A SEIR model for COVID-19 transmission

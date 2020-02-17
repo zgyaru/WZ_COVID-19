@@ -16,17 +16,30 @@ __Model__:
 
 
 * `S(t)` is the number of susceptible cases
-
 * `E(t)` is the number of exposed cases
-
 * `I(t)` is the number of infectious cases (individuals with illness onset)
-
 * `C(t)` is the number of confirmed cases (individuals with hospital admission)
-
 * `R(t)` is number of recovered cases
-
 * `N(t)` is the number of resident population
-
 * `cumI(t)` is cumulative number of infected cases
+* `De` is incubation time
+* `Di` is the time from the onset of symptoms to hospitalization (a measure of the period of infectiousness in the community)
+* `Dc` is the time frome hospitalization to discharged
 
-*  Based other research, mean incubation time for COVID-19 was five days.
+In addition, we assumed that transmission rate would continuously increases before policy intervention and falls after it.
+
+![SEIR](https://github.com/ZhangBuDiu/WZ_COVID-19/images/beta.jpg)
+
+* `𝛽` is the basic person-to-person transmission rate per day in the absence of control interventions,
+* `𝜏` is the time when the policy intervention began
+* `m` is the decay of transmission rate due to interventions
+
+__Parameter estimate__:
+The number of cumulative infected cases were obtained to estimating unknown parameters by using nonlinear least squares method. 
+Di and Dc were obey Weibull distribution in which parameters of distribution were fitted by the subset of cases with detailed information available. 
+
+![SEIR](https://github.com/ZhangBuDiu/WZ_COVID-19/images/weibull.jpg)
+
+__Simulation__:
+We use Di and Dc as prior distribution for Markov chain Monte Carlo (MCMC) simulations. The mean time for incubation time is chosen as 5 days. The algorithm was ran for 5,000 iterations with a burn-in of 3000 iterations.
+

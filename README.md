@@ -28,7 +28,7 @@ __Model__:
 
 In addition, we assumed that transmission rate would continuously increases before policy intervention and falls after it.
 
-![beta](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/beta.png)
+![beta](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/beta.png){: width="80px" height="100px"}
 
 * `𝛽` is the basic person-to-person transmission rate per day in the absence of control interventions,
 * `𝜏` is the time when the policy intervention began

@@ -8,6 +8,12 @@ library(stats)
 
 ### fitting parameters based on non-linear least squares
 
+### calibrate model of Wenzhou to the cases from Jan.6 to Feb.6
+### calibrate model of Shenzhen to the cases from Jan.12 to Feb.2
+### calibrate model of Harbin to the cases from Jan.21 to Feb.9
+### calibrate first model of wenzhou to the cases from Jan.14 to Feb.28 
+### calibrate second model of wenzhou to the cases from Jan.27 to Feb.7 
+
 #####################wenzhou##########################
 
 ## daily infected cases

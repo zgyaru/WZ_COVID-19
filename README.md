@@ -65,4 +65,4 @@ __Results__:
 
 * daily infected cases (not admission):
 
-![weibull](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/countries.png)
+![countries](https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/countries.png)

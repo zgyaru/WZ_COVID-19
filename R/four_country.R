@@ -2,13 +2,23 @@ library(MASS)
 library(stats)
 # MCMC MH
 
+### estimating unknown parameters using cumulative infected cases
+
+### forcasting spread of COVID-19
+
+### fitting parameters based on non-linear least squares
+
+#####################wenzhou##########################
+
+## daily infected cases
 true = read.table('../data/wenzhou/plot_0106_0210.txt',header = T)
 true$case.type = factor(true$case.type,levels = c('local','input'))
 cumI_seq = true$case[1:36]+ true$case[37:72]
+## cumulative infected cases
 cumI_seq = cumsum(cumI_seq)
 
 
-##### De 
+##### De: incubation time
 #### log-normal distribution
 ##
 
@@ -49,24 +59,18 @@ Ai_func = 0
 
 
 N = 9600000
-E0 = 2  #arive at wenzhou befor 1.10 (6) + 1.15 infections (4)
-I0 = 1   #local infections befor 1.10
+E0 = 2  
+I0 = 1   
 C0 = 0
 R0 = 0
 cumI = 1
 cumC = 0
 
-estimate_t = 0:29
-predict_t = 0:80
 
-#AeAi = read.table('../data/wenzhou/Ae_Ai.txt',header=T)
-#Ae_seq = AeAi$Ae
-#Ai_seq = c(0,diff(AeAi$Ai))
+predict_t = 0:80
 
 
 tao = 19
-
-
 
 estimate_t = 0:30
 fit_cumI = cumI_seq[1:(length(cumI_seq)-5)]
@@ -86,7 +90,7 @@ median_addI = apply(t(cumI_add),2,median)
 predict_line = data.frame('time' = 4:76, 
                           'case' = median_addI[1:73],'type'=rep('input',73))
 
-pdf('../res/wenzhou0216.pdf',width = 10,height = 5)
+pdf('../res/wenzhou.pdf',width = 10,height = 5)
 p = ggplot(true)
 p = p + geom_bar(aes(x = time,y = case,fill = case.type),stat = 'identity',alpha=1)+ 
   scale_fill_manual(values = bar_color)
@@ -106,7 +110,9 @@ dev.off()
 
 
 
-##########shenzhen
+##################shenzhen##############################
+
+## daily infected cases
 true = read.table('../data/shenzhen/plot_0101_0207.txt',header = T)
 true$case.type = factor(true$case.type,levels = c('local','input'))
 cumI_seq = true[which(true$case.type == 'local'),'case'] + true[which(true$case.type=='input'),'case']
@@ -168,7 +174,7 @@ cumI_add = apply(shenzhen$cumI[,],1,diff)
 median_addI = apply(t(cumI_add),2,mean)  
 predict_line = data.frame('time' = 13:76, 
                           'case' = median_addI[1:64],'type'=rep('input',64))
-pdf('../res/shenzhen0216.pdf',width = 10,height = 5)
+pdf('../res/shenzhen.pdf',width = 10,height = 5)
 p = ggplot(true)
 p = p + geom_bar(aes(x = time,y = case,fill = case.type),stat = 'identity',alpha=1)+ 
   scale_fill_manual(values = bar_color)
@@ -185,7 +191,9 @@ p + theme_Publication()+
   labs(y = 'No. of Cases')
 dev.off()
 
-### #################################zhengzhou
+##############################zhengzhou#######################
+
+## daily infected cases
 true = read.table('../data/zhengzhou/plot_0108_0210.txt',header = T)
 true$case.type = factor(true$case.type,levels = c('local','input'))
 cumI_seq = true[which(true$case.type == 'local'),'case'] + true[which(true$case.type=='input'),'case']
@@ -212,9 +220,9 @@ Dc_shape = estim_Dc['shape'][[1]]
 Dc_scale = estim_Dc['scale'][[1]]
 Dc_start = mean(Dc_seq)
 
-#####first
-E0 = 2  #arive at shenzhen befor 1.10 (6) + 1.15 infections (4)
-I0 = 1   #local infections befor 1.10
+#####first stage
+E0 = 2 
+I0 = 1   
 C0 = 0
 R0 = 0
 cumI = 1
@@ -242,7 +250,7 @@ predict_line1 = data.frame('time' = 7:21,
                            'case' = median_addI1[1:15],'type'=rep('input',15))
 
 
-############second
+############second stage
 E0 = 9  
 I0 = 15   
 C0 = 38
@@ -272,7 +280,7 @@ predict_line2 = data.frame('time' = 21:70,
                            'case' = median_addI2[1:50],'type'=rep('input',50))
 
 
-pdf('../res/zhengzhou0216.pdf',width = 10,height = 5)
+pdf('../res/zhengzhou.pdf',width = 10,height = 5)
 p = ggplot(true)
 p = p + geom_bar(aes(x = time,y = case,fill = case.type),stat = 'identity',alpha=1)+ 
   scale_fill_manual(values = bar_color)
@@ -293,7 +301,9 @@ p + theme_Publication()+
 dev.off()
 
 
-########################harbin
+###########################harbin############################
+
+## daily infected cases
 true = read.table('../data/harbin/plot_0121_0209.txt',header = T)
 true$case.type = factor(true$case.type,levels = c('local','input'))
 cumI_seq = true[which(true$case.type == 'local'),'case'] + true[which(true$case.type=='input'),'case']
@@ -355,7 +365,7 @@ cumI_add = apply(harbin$cumI,1,diff)
 median_addI = apply(t(cumI_add),2,mean)  
 predict_line = data.frame('time' = 1:51, 
                           'case' = median_addI[1:51],'type'=rep('input',51))
-pdf('../res/harbin0216.pdf',width = 10,height = 5)
+pdf('../res/harbin.pdf',width = 10,height = 5)
 p = ggplot(true)
 p = p + geom_bar(aes(x = time,y = case,fill = case.type),stat = 'identity',alpha=1)+ 
   scale_fill_manual(values = bar_color)

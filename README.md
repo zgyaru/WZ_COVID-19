@@ -12,7 +12,7 @@ __Assumption__:
 __Model__: 
 * A SEIR model for COVID-19 transmission
  
-![SEIR](https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/SEIR.png)
+![SEIR](https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/SEIR.png){: width="8px" height="10px"}
 
 
 * `S(t)` is the number of susceptible cases
@@ -28,7 +28,7 @@ __Model__:
 
 In addition, we assumed that transmission rate would continuously increases before policy intervention and falls after it.
 
-![beta](https://github.com/ZhangBuDiu/WZ_COVID-19/tree/master/images/beta.png){: width="8px" height="10px"}
+![beta](https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/beta.png){: width="8px" height="10px"}
 
 * `𝛽` is the basic person-to-person transmission rate per day in the absence of control interventions,
 * `𝜏` is the time when the policy intervention began

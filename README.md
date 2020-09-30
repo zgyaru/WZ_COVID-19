@@ -19,7 +19,7 @@ __Model__:
 
 * A customized SEIR model for COVID-19 transmission:
  
- <div align=center><img width="200" height="280" src="https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/SEIR.png"/> </div>
+ <div align=center><img width="200" height="280" src="https://github.com/zgyaru/WZ_COVID-19/blob/master/images/SEIR.png"/> </div>
 
 * `S(t)` is the number of susceptible cases
 * `E(t)` is the number of exposed cases
@@ -82,7 +82,7 @@ __Results__:
 
 * daily infected cases (not admission):
 
-![countries](https://github.com/ZhangBuDiu/WZ_COVID-19/blob/master/images/countries.png)
+![countries](https://github.com/zgyaru/WZ_COVID-19/blob/master/images/countries.png)
 
 __Reference__:
 1.	Tan W, Zhao X, Ma X, Wang W, Niu P, Xu W. A novel coronavirus genome identified in a cluster of pneumonia cases—Wuhan, China 2019− 2020. China CDC Weekly. 2020;2(4):61-62.
